@@ -1,0 +1,318 @@
+<link rel="stylesheet" href="home.css">
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<header>
+  <div class="header-banner">
+    <h1>Suyash 17BLC1041</h1>
+  </div>
+  <div class="clear"></div>
+  <nav>
+    <div class="site-title">17BLC1041</div>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="dml.html">DML</a></li>
+      <li><a href="ddl.html">DDL</a></li>
+      <li><a href="exit.html">Assignment Details</a></li>
+      <ul>
+  </nav>
+</header>
+
+<section class="content">
+  <article>
+    <p>
+      <strong>SQL</strong> is a standard language for storing, manipulating and retrieving data in databases.
+
+      Our SQL tutorial will teach you how to use SQL in: <a href="#">MySQL</a>, <a href="#">SQL Server</a>,
+      <a href="#">MS Access</a>, <a href="#">Oracle</a>,<a href="#"> Sybase</a>,<a href="#"> Informix</a>,<a href="#">
+        Postgres</a>, and other database systems. SQL (pronounced "ess-que-el") stands for Structured Query Language.
+      SQL is used to communicate with a database. According to ANSI (American National Standards Institute), it is the
+      standard language for relational database management systems. SQL statements are used to perform tasks such as
+      update data on a database, or retrieve data from a database. Some common relational database management systems
+      that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc.
+    </p>
+    <p>
+      Although most database systems use SQL, most of them also have their own additional proprietary extensions that
+      are usually only used on their system. However, the standard SQL commands such as "Select", "Insert", "Update",
+      "Delete", "Create", and "Drop" can be used to accomplish almost everything that one needs to do with a database.
+    </p>
+
+    <p>
+      Some of The Most Important SQL Commands
+    <ol>
+      <li> SELECT - extracts data from a database</li>
+      <li>UPDATE - updates data in a database</li>
+      <li>DELETE - deletes data from a database</li>
+      <li>INSERT INTO - inserts new data into a database</li>
+      <li>CREATE DATABASE - creates a new database</li>
+      <li>ALTER DATABASE - modifies a database</li>
+      <li>CREATE TABLE - creates a new table</li>
+      <li>ALTER TABLE - modifies a table</li>
+      <li>DROP TABLE - deletes a table</li>
+      <li>CREATE INDEX - creates an index (search key)</li>
+    </ol>
+    </p>
+    <p><img src="images/side1.jpg"></p>
+    <p>
+      SQL Categorizes its commands on the basis of functionalities performed by them. There are five types of SQL
+      Commands which can be classified as:
+    <ol>
+      <li>DDL(Data Definition Language).</li>
+      <li>DML(Data Manipulation Language).</li>
+      <li>DQL(Data Query Language).</li>
+      <li>DCL(Data Control Language).</li>
+      <li>TCL(Transaction Control Language).</li>
+    </ol>
+    </p>
+    <p id="ddl">
+    <h2>1. DDL(Data Definition Language) </h2>
+    In order to make/perform changes on the physical structure of any table residing inside a database, DDL is used.
+    These commands when executed are auto commit in nature and all the changes in the table are reflected and saved
+    immediately. DDL commands includes :
+    <hr>
+    </hr>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Command</th>
+          <center>
+            <th scope="col">Purpose</th>
+          </center>
+          <th scope="col">Syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>CREATE</td>
+          <td>Used to create
+            tables or databases</td>
+          <td>Create table 'tablename'</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>DELETE</td>
+          <td>It is used to delete data stored in the table.</td>
+          <td>DROP 'tablename' ;</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>ALTER</td>
+          <td>It is used to alter the structure of the database</td>
+          <td>ALTER TABLE MODIFY; (or)ALTER TABLE table_name ADD column_name COLUMN-definition;</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>TRUNCATE</td>
+          <td>It is used to delete all the rows from the table and free the space containing the table.</td>
+          <td>TRUNCATE TABLE table_name;</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    </hr>
+    </p>
+    <p>
+      Learn more about DDL with <a href="ddl.html">examples</a>
+    </p>
+    <p id="dml">
+    <h2>2. DML(Data Mainpulation Language) </h2>
+    Data Manipulation Language commands are used for inserting, retrieving, modifying, deleting, and updating data in
+    the Hive table.
+    In this article, we will learn Hive DML commands. There are many Hive DML commands like LOAD, INSERT, UPDATE, etc.
+    We will explore each of these DML commands individually, along with their syntax and examples.
+    <hr>
+    </hr>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Command</th>
+          <center>
+            <th scope="col">Purpose</th>
+          </center>
+          <th scope="col">Syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>INSERT </td>
+          <td>used to insert data into a table</td>
+          <td>INSERT into 'tablename' VALUES()</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>UPDATE</td>
+          <td>It is used to update existing data within a table.</td>
+          <td>DROP 'tablename' ;</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>DELETE </td>
+          <td>It is is used to delete records from a database table.</td>
+          <td>DELETE FROM 'tablename' WHERE 'condition'</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    </hr>
+    </p>
+    <p>
+      Learn more about DML with <a href="dml.html">examples</a>
+    </p>
+    <p id="dql">
+    <h2>3. DQL(Data Query Language) </h2>
+    DML statements are used for performing queries on the data within schema objects. The purpose of DQL Command is to
+    get some schema relation based on the query passed to it.
+    <hr>
+    </hr>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Command</th>
+          <center>
+            <th scope="col">Purpose</th>
+          </center>
+          <th scope="col">Syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>SELECT </td>
+          <td>It is used to retrieve data from the a database.</td>
+          <td>SELECT * FROM 'tablename'</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    </hr>
+    </p>
+    <p>
+      Learn more about DQL with <a href="https://www.quora.com/What-is-DQL-in-SQL">examples</a>
+    </p>
+    <p id="dcl">
+    <h2>4. DCL(Data Control Language) </h2>
+    DCL includes commands such as GRANT and REVOKE which mainly deals with the rights, permissions and other controls of
+    the database system.
+    <hr>
+    </hr>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Command</th>
+            <th scope="col">Purpose</th>
+          <th scope="col">Syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>GRANT </td>
+          <td>It gives user’s access privileges to database.</td>
+          <td>GRANT privilege_name
+            ON object_name
+            TO {user_name |PUBLIC |role_name}
+            [WITH GRANT OPTION];</td>
+        </tr>
+
+        <tr>
+          <th scope="row">1</th>
+          <td>REVOKE </td>
+          <td>It withdraw user’s access privileges given by using the GRANT command.</td>
+          <td>REVOKE privilege_name
+            ON object_name
+            FROM {user_name |PUBLIC |role_name}</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    </hr>
+    </p>
+    <p>
+      Learn more about DCL with <a
+        href="https://beginner-sql-tutorial.com/sql-grant-revoke-privileges-roles.htm">examples</a>
+    </p>
+    <p id="tcl">
+    <h2>5. TCL(Data Query Language) </h2>
+    TCL commands deals with the transaction within the database.
+    <hr>
+    </hr>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Command</th>
+          <th scope="col">Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>COMMIT </td>
+          <td>commits a transaction</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>ROLLBACK</td>
+          <td>rollbacks a transaction in case of any error occurs.</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>SAVEPOINT </td>
+          <td>sets a savepoint within a transaction.</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>SET TRANSACTION </td>
+          <td>specify characteristics for the transaction.</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    </hr>
+    </p>
+    <p>
+      Learn more about TCL with <a href="https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/">examples</a>
+    </p>
+  </article>
+
+  <aside>
+
+    <img src="images/moresql1.jpg" height="150" width="160"></img>
+    <img src="images/dbms.png" height="150" width="160"></img>
+    <p> </p>
+    learn about:
+
+    <a href="index.html#ddl"><Strong>
+        <li>DDL</li>
+      </Strong> </a>
+    <a href="index.html#dml"><Strong>
+        <li>DML</li>
+      </Strong></a>
+    <a href="index.html#dql"><Strong>
+        <li>DQL</li>
+      </Strong></a>
+    <a href="index.html#dcl"><Strong>
+        <li>DCL</li>
+      </Strong></a>
+    <a href="index.html#tcl"><Strong>
+        <li>TCL</li>
+      </Strong></a>
+  </aside>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">UP</button>
+</section>
+
+<script src="home.js"></script>
