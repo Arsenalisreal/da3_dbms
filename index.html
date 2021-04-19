@@ -1,5 +1,6 @@
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
+  try{
   window.OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
     OneSignal.init({
@@ -9,7 +10,10 @@
       },
     });
     OneSignal.showNativePrompt();
-  });
+  });}
+  catch(e){
+    console.log(e)
+  }
 </script>
 <link rel="stylesheet" href="home.css">
 <!-- CSS only -->
